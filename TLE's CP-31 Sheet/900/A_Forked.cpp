@@ -11,19 +11,12 @@ using namespace std;
 #define pii pair<int, int>
 #define vi vector<int>
 #define vvi vector<vector<int>>
-#define vpii vector<pair<int, int> >
+#define vpii vector<pair<int, int>>
 #define FAST_IO ios::sync_with_stdio(0), cin.tie(0), cout.tie(0)
 #define MOD 1000000007
 
 // Global variables and constants
 const int INF = 1e18;
-
-int __gcd(int a, int b)
-{
-    if (b == 0)
-        return a;
-    return __gcd(b, a % b);
-}
 
 // Function for solving the problem
 void t_soln()
@@ -34,14 +27,14 @@ void t_soln()
     vpii dirs = {{a, b}, {a, -b}, {-a, b}, {-a, -b}, {b, a}, {b, -a}, {-b, a}, {-b, -a}};
 
     set<pii> k, q;
-    for (auto d : dirs)
+    for (auto &d : dirs)
     {
         k.insert({d.F + xK, d.S + yK});
         q.insert({d.F + xQ, d.S + yQ});
     }
 
     int res = 0;
-    for (auto pos : k)
+    for (auto &pos : k)
     {
         if (q.find(pos) != q.end())
             res++;
