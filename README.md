@@ -8,6 +8,4 @@ Thanks to Luv's YouTube Playlist: [Competitive Programming/DSA Course | Hindi](h
 
 ## Regular Updates
 
-This repository is regularly updated and maintained as new problems are solved every day.
-
-Happy coding!
+This repository is regularly updated and maintained as new problems are solved daily.
